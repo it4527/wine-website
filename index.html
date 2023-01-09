@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Ivaylo's Wine Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Bulgarian Wine Shop</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Featured Wines</a></li>
+      <li><a href="redwines.html">Red Wines</a></li>
+      <li><a href="whitewines.html">White Wines</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+    </ul>
+  </nav>
+
+  <div class="content-box">
+
+    <div class="inner-box">
+      <h2>Featured Wines</h2>
+      <img src="images/Katarzyna-Кaberne.png" class="wine_1" alt="Wine 1">
+      <h3>Кaberne Wine</h3>
+      <p class="wine-description">The grapes are picked manually in cassettes and carefully selected. Before
+        processing, the grapes are refrigerated for about 20 hours. This is followed by sorting by sorting lines,
+        ronching, re-sorting and crushing. Alcoholic fermentation is carried out in French oak barrels of 400l in
+        70% of the batch, and in the remaining 30% of the alcoholic fermentation is carried out in stainless steel
+        fermenters of 10m³ and 15m³.</p>
+      <img src="images/vineyards.jpg" class="wine_2" alt="Wine 1">
+    </div>
+
+
+
+    <div class="inner-box">
+      <h2>Featured Wines</h2>
+      <img src="images/White_wine.png" class="wine_1" alt="Wine 1">
+      <h3>Chardonnay Wine</h3>
+      <p class="wine-description">The grapes are picked manually in cassettes and carefully selected. It is processed
+        according to the classical technology, which includes the temperature of the grapes in a refrigerator for 20h to
+        a temperature of 10-12˚C, sorting, ronching, crushing, infusing, draining and pressing. This is followed by
+        clarification of the must and alcoholic fermentation at a temperature of 15-19 ° C. This scheme involves
+        alcoholic fermentation and maturation in French oak barrels.</p>
+      <img src="images/wines.jpg" class="wine_2" alt="Wine 1">
+    </div>
+
+
+    <div class="inner-box">
+      <h2>Featured Wines</h2>
+      <img src="images/Katarzyna-Merlo.png" class="wine_1" alt="Wine 1">
+      <h3>Merlo Wine</h3>
+      <p class="wine-description">The wine is characterized by an intense red color with shades of purple. Concentrated
+        and harmonious aroma of ripe red fruits, spices and subtle nuances of French oak. The taste of the wine is
+        voluminous, with rounded tannins, juiciness and pronounced flavor. The all-natural character of the wine is
+        complemented by the long and memorable finish. It goes very well with red meats, pasta, hot appetizers and
+        chicken. The appropriate temperature for consumption is 18⁰-20⁰C</p>
+      <img src="images/bulgarian-wine-vinyard.jpg" class="wine_2" alt="Wine 1">
+    </div>
+
+
+
+
+
+
+    <div class="inner-box">
+      <h2>New Product</h2>
+      <img src="images/Syrah.png" class="wine_1" alt="Wine 1">
+      <h3>Rose Wine</h3>
+      <p id="rb" onmouseleave="changeleave()" onmouseover="change()" class="wine-description">Light pink color with
+        orange hue.aromas of wild strawberries, blueberries and floral
+        notes with a light citrus in the back. Caressing the palate taste with a pleasant fruity character, fresh and
+        long lasting finish. Combines very well with asparagus, light cheeses, shrimp or desserts. Syrah 60%; Malbec
+        20%; Cabernet Franc 20% Alc. 13.00% vol Temperature of consumption 12⁰-13⁰ C Aging potential in bottle 5 years
+      </p>
+    </div>
+
+  </div>
+
+  </div>
+
+
+  </div>
+
+
+  <script>
+
+    window.onscroll = () => {
+      if (window.innerHeight + window.pageYOffset >= document.body.offsetHeight) {
+        //console.log("You are at the end of the page.")
+      }
+
+    }
+
+    const toTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
+
+    //Hover change color function
+    function change() {
+
+      document.getElementById("rb").style.color = "lightgreen";
+
+
+    }
+
+    function changeleave() {
+      document.getElementById("rb").style.color = "white";
+    }
+
+
+  </script>
+
+  <button type="button" class="" onclick="toTop()">Back to Top</button>
+
+
+  <footer>
+    <p1>@Copyright 2023</p1>
+  </footer>
+</body>
+
+</html>
